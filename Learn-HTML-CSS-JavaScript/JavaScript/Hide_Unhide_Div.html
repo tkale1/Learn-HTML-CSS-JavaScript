@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("#h11").hide();
+         $("#h12").show();
+    });
+    $("#show").click(function(){
+	    $("#h12").hide();
+        $("#h11").show();
+    });
+});
+</script>
+</head>
+<body>
+<div>
+<div id = "h11">	If you click on the "Hide" button, I will disappear. </div>
+<div id = "h12"> I will disappear. </div>
+</div>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+</body>
+</html>
